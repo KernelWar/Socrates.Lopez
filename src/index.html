@@ -9,27 +9,60 @@
 </head>
 
 <body>
-  <div id="content-1" class="section-page">
-    <div id="my-info" class="project">
-      <div id="content-my-photo">
-        <img src="./img/foto.png" width="150">
+  <div id="content-1" class="container-fluid">
+    <div id="content-info" class="row">
+      <div id="content-my-photo" class="col-md-2 col-sm-3">
+        <img id="my-photo" src="./img/foto.png">
       </div>
-      <div>
-        <div id="text-hello">Hola soy</div>
-        <div id="my-name">José <br> Sócrates</div>
-        <div id="about-me">Soy desarrollador web</div>
-      </div>
-      <div id="links-contact">
-        <div>
-          <a href="https://github.com/KernelWar" target="blank"><img src="./img/github.svg" width="20"> KernelWar</a>
+      <div class="col-md-12 col-sm-5">
+        <div class="my-info">
+          <div id="text-hello">Hola soy</div>
+          <div id="my-name">José <br> Sócrates</div>
+          <div id="about-me">Soy desarrollador web</div>
         </div>
-        <div>
-          <a href="mailto:josesocrateslopez@gmail.com"><img src="./img/gmail.svg" width="20">
-            josesocrateslopez@gmail.com</a>
+      </div>
+      <div class="col-md-12 col-sm-12">
+        <div id="links" class="row">
+          <div id="github" class="col-md-3 col-sm-3">
+            <a href="https://github.com/KernelWar" target="blank">
+              <img class="img-link" src="./img/github.svg" width="20">
+              KernelWar</a>
+          </div>
+          <div id="mail" class="col-md-9 col-sm-9">
+            <a href="mailto:josesocrateslopez@gmail.com">
+              <img class="img-link" src="./img/gmail.svg" width="20">
+              josesocrateslopez@gmail.com</a>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
+  <div class="container-fluid section-page">
+    <div class="row">
+      <div class="col-md-12 text-center title-section">
+        <h1>Pengüi</h1>
+      </div>
+      <div class="col-md-12 text-center">
+        <div id="content-pengui">
+          <div id="image-pengui"></div>
+          <div id="description-pengui">Proyecto interactivo sobre el ciclo de la tierra en el sistema solar con realidad aumentada (Web AR)
+          </div>
+        </div>
+      </div>
+      <div class="links-pengui col-md-6 col-sm-6 col-12 text-md-right text-sm-right text-center">
+        <a href="https://github.com/KernelWar/webar-peng-i" target="blank">
+          <img class="img-link" src="./img/github.svg">
+          KernelWar/webar-peng-i</a>
+      </div>
+      <div class="links-pengui col-md-6 col-sm-6 col-12 text-md-left text-sm-left text-center">
+        <a href="https://pengui.herokuapp.com" target="blank">
+          <img class="img-link" src="./img/cubo.svg" width="20">
+          pengui.herokuapp.com</a>
+      </div>
+    </div>
+  </div>
+  <!--
   <div id="content-2" class="section-page center-section">
     <div>
       <div id="title-pengui">
@@ -74,6 +107,7 @@
       </div>
     </div>
   </div>
+  -->
 </body>
 
 </html>
