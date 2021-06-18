@@ -7,18 +7,14 @@ body {
   padding: 0;
   margin: 0;
 }
-.full-height {
-  height: 100% !important;
-}
 .section-page {
   height: 100%;
-  margin-bottom: 0 !important;
   background: var(--k-tertiary);
   display: grid;
   align-items: center;
 }
 #content-1 {
-  background: url("../img/filosofos3.png"), var(--k-primary);
+  background: url("../img/filosofos_2.png"), var(--k-primary);
   background-position: bottom right;
   background-size: contain;
   background-blend-mode: color-burn;
@@ -34,12 +30,13 @@ body {
   }
   #links {
     margin-top: 2em;
-    div{
+    font-family: Aileron;
+    div {
       margin-bottom: 5px;
     }
     a {
       color: var(--k-color-primary);
-      font-size: 20px;            
+      font-size: 20px;
     }
   }
 }
@@ -74,38 +71,71 @@ body {
     font-weight: 600;
   }
 }
-
-
-#content-pengui{
+.content-project {
   display: flex;
   justify-content: center;
   padding-top: 2em;
   padding-bottom: 2em;
-  #description-pengui{    
+  .content-image-project {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  @media (max-width: 575px) {
+    .image-project {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .description-project {
+      p {
+        max-width: 100% !important;
+      }
+    }
+  }
+  @media (min-width: 576px) {
+    .image-project {
+      margin-left: auto;
+    }
+    .description-project {
+      border-left: 1px solid #575757ff;
+    }
+  }
+  .image-project {
+    width: 105px;
+    height: 105px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .description-project {
     padding-top: 2em;
     padding-bottom: 2em;
-    max-width: 210px;
-    text-align: left;
-    padding-left: 20px;
-    border-left: 1px solid #000;
+    p {
+      max-width: 210px;
+      font-family: Aileron;
+    }
+    padding-left: 15px;
   }
 }
-#image-pengui{
-  background-image: url('../img/pengui.jpg');
-  width: 100px;
-  height: 100px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 100%;
-  margin-right: 20px;
-  margin-top: auto;
-  margin-bottom: auto;
+#image-pengui {
+  background-image: url("../img/pengui.jpg");
+}
+#img-mouse {
+  background-image: url("../img/logo_mouse.png");
+  border-radius: 0;
+}
+#download-mouse {
+  color: #040029;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
-.links-pengui{
+.links-project {
   margin-bottom: 5px;
-  a{
+  font-family: Aileron;
+  a {
     color: var(--k-primary) !important;
-    font-size: 18px;   
+    font-size: 18px;
   }
 }
