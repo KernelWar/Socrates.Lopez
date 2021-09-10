@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "watch": "webpack --watch",
-    "start": "webpack serve --open --host 192.168.0.106",
+    "start": "webpack serve --open --host 192.168.138.106",
     "build": "webpack"
   },
   "keywords": [],
@@ -25,6 +25,11 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0"
+    "@popperjs/core": "^2.10.1",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "jquery-aniview": "^1.0.4",
+    "popper.js": "^1.16.1"
   }
 }

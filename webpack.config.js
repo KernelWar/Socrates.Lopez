@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const { ProvidePlugin } = require('webpack');
 
 module.exports = {
     mode: 'development',
@@ -24,7 +25,11 @@ module.exports = {
                 { from: "./src/img", to: path.resolve(__dirname, 'dist/img') }
             ],
         }),
-        new MiniCSSExtractPlugin()
+        new MiniCSSExtractPlugin(),
+        new ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        })
     ],
     module: {
         rules: [
