@@ -4,9 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "watch": "webpack --watch",
-    "start": "webpack serve --open --host 192.168.138.106",
-    "build": "webpack"
+    "start": "webpack serve --open --host 192.168.138.106 --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +29,7 @@
     "bootstrap": "^4.6.0",
     "jquery": "^3.6.0",
     "jquery-aniview": "^1.0.4",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "webpack-merge": "^5.8.0"
   }
 }
