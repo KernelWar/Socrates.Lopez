@@ -27,13 +27,13 @@ body {
   display: grid;
   overflow: auto;
   #content-info {
-    padding: 5%;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding: 5%; 
+    align-items: center;
   }
   #links {
     font-family: "Futura Lt BT";
-    padding: 15px;
+    padding-left: 15px;
+    margin: 0;
     li {
       display: inline-block;
       padding-right: 10px;
@@ -53,8 +53,6 @@ body {
   display: flex;
   #my-photo {
     max-height: 150px;
-    margin-top: auto;
-    margin-bottom: auto;
   }
 }
 
@@ -72,10 +70,11 @@ body {
     letter-spacing: 10px;
   }
   #about-me {
-    font-size: 22px;
+    font-size: 26px;
     color: var(--k-secondary);
     font-weight: 600;
     margin-top: 3px;
+    letter-spacing: 1.5px;
   }
 }
 .content-project {
