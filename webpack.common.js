@@ -12,7 +12,8 @@ module.exports = {
         }),
         new CopyPlugin({
             patterns: [
-                { from: "./src/img", to: path.resolve(__dirname, 'dist/img') }
+                { from: "./src/img", to: path.resolve(__dirname, 'dist/img') },
+                { from: "./src/favicon.png", to: path.resolve(__dirname, 'dist/') }
             ],
         }),
         new MiniCSSExtractPlugin(),
