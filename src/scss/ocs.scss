@@ -1,0 +1,75 @@
+@import "fonts.scss";
+html,
+body {
+    height: 100%;
+}
+body {
+    background: url("./../img/ocs/hardware.jpg"), linear-gradient(to right bottom, #051937, #02183f, #031646, #0a144c, #150f51) !important;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    color: #ffff !important;
+    font-family: "Futura Md BT" !important;
+    text-align: center !important;
+    display: flex;
+    .row{
+        margin: 0 !important;
+    }
+}
+#content-ocs {
+    background-blend-mode: lighten;    
+    justify-content: center;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    p{
+        font-family: "Futura Lt Bt";
+        font-size: 22px;
+    }
+}
+#content-items{
+    max-height: 500px;
+    overflow-y: auto;
+}
+.functions{      
+    .content-function{                
+        justify-content: center;  
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: "Futura Lt Bt";
+    }
+    div{       
+        img{
+            max-width: 40px;
+        }
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+#content-download{
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+}
+#btn-download{
+    background: #3c00ffff;
+    border-radius: 40px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    border: none;
+    font-family: "Futura Md Bt";
+}
+#btn-download:hover{
+    background: rgb(51, 0, 219);
+}
+#btn-download:active{
+    background: rgb(36, 0, 155);
+}
+a{
+    font-family: "Futura Lt Bt";
+    color: #FFF !important;
+}
