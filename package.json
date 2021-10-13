@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "webpack serve --open --host 192.168.138.106 --config webpack.dev.js",
+    "start": "webpack serve --open --host 192.168.138.108 --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "deploy": "gh-pages -d dist -b deploy"
   },
