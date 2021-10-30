@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --open --host 192.168.138.107 --port 8080 --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "deploy": "gh-pages -d dist -b deploy"
+    "deploy": "npm run build && gh-pages -d dist -b deploy"
   },
   "keywords": [],
   "author": "",
