@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "webpack serve --open --host 192.168.138.107 --port 8080 --config webpack.dev.js",
+    "start": "webpack serve --port 8080 --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "deploy": "npm run build && gh-pages -d dist -b deploy"
   },
