@@ -6,13 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="Mi portafolio">
-  <meta property="og:description" content="Hola!!, soy un desarrollador full stack especializado en Angular, React y Ionic. ¡Mira mis proyectos!">
+  <meta property="og:description"
+    content="Hola!!, soy un desarrollador full stack especializado en Angular, React y Ionic. ¡Mira mis proyectos!">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/14639332?v=4">
   <meta property="og:url" content="https://kernelwar.com">
   <meta property="og:type" content="website">
 
   <title>Sócrates López</title>
   <link rel="icon" type="image/x-icon" href="./favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,30 +33,39 @@
         <div class="my-info aniview" data-av-animation="animate__fadeInLeft">
           <div id="text-hello">Hola soy</div>
           <div id="my-name">José <br> Sócrates</div>
-          <div id="about-me" class="aniview animate__delay-1s" data-av-animation="animate__pulse">Soy desarrollador Full Stack
+          <div id="about-me" class="aniview animate__delay-1s" data-av-animation="animate__pulse">
+            SOY DESARROLLADOR FULL STACK
           </div>
         </div>
       </div>
       <ul id="links" class="aniview" data-av-animation="animate__fadeInUpBig">
-        <li><a href="https://github.com/KernelWar" target="_blank">
-            <img class="img-link" src="./img/github.svg" width="20">
-            KernelWar</a></li>
         <li>
-          <a href="mailto:josesocrateslopez@gmail.com">
-            <img class="img-link" src="./img/gmail.svg" width="20">
-            josesocrateslopez@gmail.com</a>
+          <a href="https://github.com/KernelWar" target="_blank">
+            <img class="img-link" src="./img/github.svg" width="20" title="Ir a perfil de GitHub">
+          </a>
         </li>
         <li>
-          <a>
-            <img class="img-link" src="./img/chat-balloon.png" width="20">
-            9531713740 <span>(en whatsapp o telegram)</span></a>
+          <a href="mailto:josesocrateslopez@gmail.com">
+            <img class="img-link" src="./img/gmail.svg" width="20" title="Enviar un correo">
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/9531713740" target="_blank">
+            <img class="img-link" src="./img/whatsapp.svg" width="20" title="Enviar un mensaje por WhatsApp">
+          </a>
+        </li>
+        <li>
+          <a href="https://t.me/KernelWar" target="_blank">
+            <img class="img-link" src="./img/telegram.svg" width="20" title="Enviar un mensaje por Telegram">
+          </a>
         </li>
       </ul>
     </div>
     <div class="d-flex mr-md-0 mr-lg-4">
       <div id="spotify-widget" style="display: none;" class="m-auto mr-md-5 mr-lg-5">
         <p id="spotify-status" class="text-center text-md-left text-white font-weight-bold"></p>
-        <iframe id="spotify-iframe" src="" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe id="spotify-iframe" src="" width="300" height="80" frameborder="0" allowtransparency="true"
+          allow="encrypted-media"></iframe>
       </div>
     </div>
   </div>
@@ -60,13 +76,16 @@
         <div class="card aniview" data-av-animation="animate__backInLeft">
           <div id="carusel-c1p1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p1/1.png" data-title="Monitoreo y geolocalización de vehículos (PLATAFORMA)">
+              <div class="carousel-item active image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p1/1.png" data-title="Monitoreo y geolocalización de vehículos (PLATAFORMA)">
                 <img src="./img/p1/1.png" class="d-block w-100">
               </div>
-              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p1/2.png" data-title="Monitoreo y geolocalización de vehículos (PLATAFORMA)">
+              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p1/2.png" data-title="Monitoreo y geolocalización de vehículos (PLATAFORMA)">
                 <img src="./img/p1/2.png" class="d-block w-100">
               </div>
-              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p1/3.png" data-title="Monitoreo y geolocalización de vehículos (PLATAFORMA)">
+              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p1/3.png" data-title="Monitoreo y geolocalización de vehículos (PLATAFORMA)">
                 <img src="./img/p1/3.png" class="d-block w-100">
               </div>
             </div>
@@ -106,7 +125,7 @@
               </li>
             </ul>
             </p>
-            <p class="card-text">
+            <p class="card-text card-text-footer">
               Otras tecnólogias:<br>
               Laravel-echo, rxjs, angular-material
             </p>
@@ -115,7 +134,8 @@
       </div>
       <div class="col-sm-6 col-md-6 col-lg-3">
         <div class="card aniview" data-av-animation="animate__zoomInDown">
-          <img src="./img/p2/1.png" class="card-img-top image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p2/1.png" data-title="Monitoreo y geolocalización de vehículos (APP)">
+          <img src="./img/p2/1.png" class="card-img-top image-card" data-toggle="modal" data-target="#modal-image"
+            data-src="./img/p2/1.png" data-title="Monitoreo y geolocalización de vehículos (APP)">
           <div class="card-body">
             <h5 class="card-title">
               Monitoreo y geolocalización de vehículos (APP)
@@ -136,7 +156,7 @@
               </li>
             </ul>
             </p>
-            <p class="card-text">
+            <p class="card-text card-text-footer">
               Otras tecnólogias:<br>
               Laravel-echo, rxjs, capacitor
             </p>
@@ -147,16 +167,20 @@
         <div class="card aniview" data-av-animation="animate__backInRight">
           <div id="carusel-c3p1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p3/1.PNG" data-title="Sistema personalizado para ferretería">
+              <div class="carousel-item active image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p3/1.PNG" data-title="Sistema personalizado para ferretería">
                 <img src="./img/p3/1.PNG" class="d-block w-100">
               </div>
-              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p3/2.png" data-title="Sistema personalizado para ferretería">
+              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p3/2.png" data-title="Sistema personalizado para ferretería">
                 <img src="./img/p3/2.png" class="d-block w-100">
               </div>
-              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p3/3.png" data-title="Sistema personalizado para ferretería">
+              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p3/3.png" data-title="Sistema personalizado para ferretería">
                 <img src="./img/p3/3.png" class="d-block w-100">
               </div>
-              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p3/4.png" data-title="Sistema personalizado para ferretería">
+              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p3/4.png" data-title="Sistema personalizado para ferretería">
                 <img src="./img/p3/4.png" class="d-block w-100">
               </div>
             </div>
@@ -195,28 +219,31 @@
               </li>
             </ul>
             </p>
-            <p class="card-text">
+            <p class="card-text card-text-footer">
               Otras tecnólogias:<br>
               rxjs, angular-material
             </p>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
     <div class="row">
       <div class="col-sm-6 col-md-6 col-lg-3">
         <div class="card aniview" data-av-animation="animate__backInRight">
           <div id="carusel-c3p7" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p7/1.png" data-title="Rick And Morty">
+              <div class="carousel-item active image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p7/1.png" data-title="Rick And Morty">
                 <img src="./img/p7/1.png" class="d-block w-100">
               </div>
-              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p7/2.png" data-title="Rick And Morty">
+              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p7/2.png" data-title="Rick And Morty">
                 <img src="./img/p7/2.png" class="d-block w-100">
               </div>
-              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p7/3.png" data-title="Rick And Morty">
+              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p7/3.png" data-title="Rick And Morty">
                 <img src="./img/p7/3.png" class="d-block w-100">
-              </div>              
+              </div>
             </div>
             <a class="carousel-control-prev" href="#carusel-c3p7" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -231,17 +258,18 @@
           <div class="card-body">
             <h5 class="card-title">
               Rick And Morty
-            </h5>
-            <h5 class="card-title">
-              <a href="https://github.com/KernelWar/RickAndMortyApp" target="_blank">Ir al repositorio</a>
-            </h5>
-            <h5 class="card-title">
+            </h5>                      
+            <h5 class="card-subtitle">
               <a href="https://rick-and-morty-app-alpha-two.vercel.app" target="_blank">Demo</a>
-            </h5>
+            </h5>  
             <p class="card-text">
-              Proyecto de una aplicación web que consume la API de Rick And Morty, en este proyecto se implemento Angular Standalone y NGRX destacando técnicas para optimizar peticiónes innecesarias a la API, ademas de
+              Proyecto de una aplicación web que consume la API de Rick And Morty, en este proyecto se implemento
+              Angular Standalone y NGRX destacando técnicas para optimizar peticiónes innecesarias a la API, ademas de
               implementar lazy loading.
             </p>
+            <h5 class="card-subtitle">
+              <a href="https://github.com/KernelWar/RickAndMortyApp" target="_blank">Ir al repositorio</a>
+            </h5>
             <p>
             <ul class="list-group list-group-horizontal">
               <li class="list-group-item not-border">
@@ -251,10 +279,10 @@
               <li class="list-group-item not-border">
                 <img src="./img/tech/sass.svg" width="30" alt="sass" data-toggle="tooltip" data-placement="top"
                   title="sass">
-              </li>              
+              </li>
             </ul>
             </p>
-            <p class="card-text">
+            <p class="card-text card-text-footer">
               Otras tecnólogias:<br>
               rxjs, angular-material, ngrx
             </p>
@@ -282,43 +310,43 @@
           </div>
         </div>
       </div>
-      <div class="links-project col-md-6 col-sm-6 col-12 text-md-right text-sm-right text-center ">
+      <div class="links-project col-md-6 col-sm-6 col-6 text-right">
         <div class="aniview" data-av-animation="animate__fadeIn">
           <a href="https://github.com/KernelWar/webar-peng-i" target="_blank">
-            <img class="img-link" src="./img/github.svg">
-            KernelWar/webar-peng-i</a>
+            <img class="img-link" src="./img/github.svg" title="Ir a repositorio"></a>
         </div>
       </div>
-      <div class="links-project col-md-6 col-sm-6 col-12 text-md-left text-sm-left text-center">
+      <div class="links-project col-md-6 col-sm-6 col-6 text-left">
         <div class="aniview" data-av-animation="animate__fadeIn">
           <a href="https://pengui-23y5p9a24-kernelwar.vercel.app/" target="_blank">
-            <img class="img-link" src="./img/cubo.svg" width="20">
-            Visitar a Pengüi</a>
+            <img class="img-link" src="./img/cubo.svg" width="20" title="Ver proyecto">
+          </a>
         </div>
       </div>
     </div>
   </div>
   <div id="content-4" class="container-fluid section-page cards-project">
-    <h2>Proyectos</h2>
+    <h2 class="title-section">Proyectos</h2>
     <div class="row">
       <div class="col-sm-6 col-md-6 col-lg-3">
         <div class="card aniview" data-av-animation="animate__fadeInBottomLeft">
-          <img src="./img/p4/1.png" class="card-img-top image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p4/1.png" data-title="OneConnection server">
+          <img src="./img/p4/1.png" class="card-img-top image-card" data-toggle="modal" data-target="#modal-image"
+            data-src="./img/p4/1.png" data-title="OneConnection server">
           <div class="card-body">
             <h5 class="card-title">
               OneConnection server
-            </h5>
-            <h5 class="card-title">
-              <a href="https://github.com/KernelWar/OneConnection-server" target="_blank">Ir al repositorio</a>
-            </h5>
-            <h5 class="card-title">
-              <a href="https://kernelwar.github.io/Socrates.Lopez/ocs.html" target="_blank">Página de descarga</a>
-            </h5>
+            </h5>            
             <p class="card-text">
               Es un servidor para ejecutar algunas funciones (control del volumen y brillo, acceso a directorios,
               apagar, reiniciar...) con el cliente OneConnection app para el sistema operativo windows usando
               tennologias web. Proyecto open source bajo licencia GPL v3.
             </p>
+            <h5 class="card-subtitle">
+              <a href="https://github.com/KernelWar/OneConnection-server" target="_blank">Ir al repositorio</a>
+            </h5>
+            <h5 class="card-subtitle">
+              <a href="https://kernelwar.github.io/Socrates.Lopez/ocs.html" target="_blank">Página de descarga</a>
+            </h5>
             <p>
             <ul class="list-group list-group-horizontal">
               <li class="list-group-item not-border">
@@ -339,7 +367,7 @@
               </li>
             </ul>
             </p>
-            <p class="card-text">
+            <p class="card-text card-text-footer">
               Otras tecnólogias:<br>
               express, socket.io, electron-builder, node ffi napi
             </p>
@@ -348,18 +376,20 @@
       </div>
       <div class="col-sm-6 col-md-6 col-lg-3">
         <div class="card aniview" data-av-animation="animate__jackInTheBox">
-          <img src="./img//p5/1.png" class="card-img-top image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p5/1.png" data-title="OneConnection app">
+          <img src="./img//p5/1.png" class="card-img-top image-card" data-toggle="modal" data-target="#modal-image"
+            data-src="./img/p5/1.png" data-title="OneConnection app">
           <div class="card-body">
             <h5 class="card-title">
               OneConnection app
-            </h5>
-            <h5 class="card-title">
-              <a href="https://play.google.com/store/apps/details?id=kernelwar.js.ll" target="_blank">Ver en la Play Store</a>
-            </h5>
+            </h5>            
             <p class="card-text">
               Cliente para conectarse a OneConnection server, ofrece una interfaz que muestra algunas funciones que se
               pueden ejecutar atravez del servidor, disponible en la Play Store.
             </p>
+            <h5 class="card-subtitle">
+              <a href="https://play.google.com/store/apps/details?id=kernelwar.js.ll" target="_blank">Ver en la Play
+                Store</a>
+            </h5>
             <p>
             <ul class="list-group list-group-horizontal">
               <li class="list-group-item not-border">
@@ -376,7 +406,7 @@
               </li>
             </ul>
             </p>
-            <p class="card-text">
+            <p class="card-text card-text-footer">
               Otras tecnólogias:<br>
               socket.io-client, plugins de cordova
             </p>
@@ -387,16 +417,20 @@
         <div class="card aniview" data-av-animation="animate__fadeInBottomRight">
           <div id="carusel-c6p2" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p6/1.PNG" data-title="KidCode">
+              <div class="carousel-item active image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p6/1.PNG" data-title="KidCode">
                 <img src="./img/p6/1.PNG" class="d-block w-100">
               </div>
-              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p6/2.PNG" data-title="KidCode">
+              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p6/2.PNG" data-title="KidCode">
                 <img src="./img/p6/2.PNG" class="d-block w-100">
               </div>
-              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p6/3.PNG" data-title="KidCode">
+              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p6/3.PNG" data-title="KidCode">
                 <img src="./img/p6/3.PNG" class="d-block w-100">
               </div>
-              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image" data-src="./img/p6/4.PNG" data-title="KidCode">
+              <div class="carousel-item image-card" data-toggle="modal" data-target="#modal-image"
+                data-src="./img/p6/4.PNG" data-title="KidCode">
                 <img src="./img/p6/4.PNG" class="d-block w-100">
               </div>
             </div>
@@ -413,15 +447,15 @@
           <div class="card-body">
             <h5 class="card-title">
               KidCode
-            </h5>
-            <h5 class="card-title">
-              <a href="https://github.com/KernelWar/KidCode" target="_blank">Ir al repositorio</a>
-            </h5>
+            </h5>            
             <p class="card-text">
               Compilador de pseudocódigo en Java con interfaz grafica(editor de código, consola para ver errores, tabla
               de tokens, generador de código intermedio y generador de árbol sintáctico). Proyecto open source bajo
               licencia MIT.
             </p>
+            <h5 class="card-subtitle">
+              <a href="https://github.com/KernelWar/KidCode" target="_blank">Ir al repositorio</a>
+            </h5>
             <p>
             <ul class="list-group list-group-horizontal">
               <li class="list-group-item not-border">
@@ -430,7 +464,7 @@
               </li>
             </ul>
             </p>
-            <p class="card-text">
+            <p class="card-text card-text-footer">
               Otras tecnólogias:<br>
               Graphviz, jflex, jcup
             </p>
@@ -449,7 +483,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <img class="img-fluid modal-src rounded mx-auto d-block"  alt="">
+          <img class="img-fluid modal-src rounded mx-auto d-block" alt="">
         </div>
       </div>
     </div>
