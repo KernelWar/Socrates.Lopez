@@ -27,172 +27,159 @@
 
 <body>
   <main class="wrap">
-  <section class="hero">
-    <div>
-      <span class="kicker">HOLA SOY</span>
-      <div class="title">
-        <h1>José</h1>
-        <h1 class="alt">Sócrates</h1>
-      </div>
-      <p class="role">SOY DESARROLLADOR FULL STACK</p>
-
-      <nav class="platforms">
-        <a href="https://github.com/KernelWar" target="_blank"><img src="./img/github.svg" alt="GitHub" />GitHub</a>
-        <a href="mailto:josesocrateslopez@gmail.com" class="copy-email">
-          <img src="./img/gmail.svg" alt="Gmail" />Gmail <i class="bi bi-copy"></i>
-        </a>
-        <a href="https://wa.me/9531713740" target="_blank"><img src="./img/whatsapp.svg" alt="WhatsApp" />WhatsApp</a>
-        <a href="https://t.me/KernelWar" target="_blank"><img src="./img/telegram.svg" alt="Telegram" />Telegram</a>
-      </nav>
-
-      <div class="hud">
-        <div class="frame"></div>
-        <div class="id">
-          <span>ID: KERNELWAR_01</span>
-          <span>MODE: FULL-STACK</span>
-          <span>LEVEL: 99</span>
-          <span>STATUS: ONLINE</span>
+    <section class="hero">
+      <div>
+        <span class="kicker">HOLA SOY</span>
+        <div class="title">
+          <h1>José</h1>
+          <h1 class="alt">Sócrates</h1>
         </div>
-      </div>
-    </div>
+        <p class="role">SOY DESARROLLADOR FULL STACK</p>
 
-    <div class="widgets">
-      <div class="row">
-        <div class="col-12 col-sm-6 mb-3">
-          <div class="panel h-100">
-            <h3>Detector de Bugs 🐞</h3>
-            <div class="radar">
-              <div class="scope">
-                <span class="ring"></span>
-                <span class="line"></span>
-                <span class="blip b1"></span>
-                <span class="blip b2"></span>
-                <span class="blip b3"></span>
+        <nav class="platforms">
+          <a href="https://github.com/KernelWar" target="_blank"><img src="./img/github.svg" alt="GitHub" />GitHub</a>
+          <a href="mailto:josesocrateslopez@gmail.com" class="copy-email">
+            <img src="./img/gmail.svg" alt="Gmail" />Gmail <i class="bi bi-copy"></i>
+          </a>
+          <a href="https://wa.me/9531713740" target="_blank"><img src="./img/whatsapp.svg" alt="WhatsApp" />WhatsApp</a>
+          <a href="https://t.me/KernelWar" target="_blank"><img src="./img/telegram.svg" alt="Telegram" />Telegram</a>
+        </nav>
+
+        <div class="hud">
+          <div class="frame"></div>
+          <div class="id">
+            <span>ID: KERNELWAR_01</span>
+            <span>MODE: FULL-STACK</span>
+            <span>LEVEL: 99</span>
+            <span>STATUS: ONLINE</span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="widgets">
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-3">
+            <div class="panel h-100">
+              <h3>Detector de Bugs 🐞</h3>
+              <div class="radar">
+                <div class="scope">
+                  <span class="ring"></span>
+                  <span class="line"></span>
+                  <span class="blip b1"></span>
+                  <span class="blip b2"></span>
+                  <span class="blip b3"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 mb-3">
+            <div class="panel h-100">
+              <h3>Flujo de Datos Encriptados ⚡</h3>
+              <div class="tape">
+                <div class="scan"></div>
+                <pre class="code" id="cipher"></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="panel server-future">
+              <h3>Latido del Servidor ❤️</h3>
+              <div class="pulse">
+                <div class="dot"></div>
+                <div class="pulse-label">
+                  Server Status: <span class="online">ONLINE</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 mb-3">
-          <div class="panel h-100">
-            <h3>Flujo de Datos Encriptados ⚡</h3>
-            <div class="tape">
-              <div class="scan"></div>
-              <pre class="code" id="cipher"></pre>
-            </div>
+      </div>
+    </section>
+
+    <!-- 🎧 SPOTIFY WIDGET -->
+    <div id="container-widget">
+      <div id="spotify-widget" class="spotify-widget mt-4 mb-4">
+      <p id="spotify-status" class="spotify-status"></p>
+      <iframe id="spotify-iframe" src="" width="300" height="80" frameborder="0" allowtransparency="true"
+        allow="encrypted-media"></iframe>
+    </div>
+    </div>
+  </main>
+
+
+  <section class="oneconnection-section container-fluid py-5">
+    <div class="container-xl">
+      <h2 class="section-title text-center mb-5">🧩 OneConnection</h2>
+
+      <!-- PROJECT 1 -->
+      <div class="row align-items-center mb-5 gy-4">
+        <div class="col-md-6">
+          <h3 class="project-title">OneConnection Server</h3>
+          <p>
+            Servidor para ejecutar funciones (control del volumen y brillo, acceso a directorios, apagar, reiniciar,
+            etc.)
+            con el cliente <b>OneConnection app</b> en Windows, usando tecnologías web.
+            Proyecto open source bajo licencia <b>GPL v3</b>.
+          </p>
+
+          <div class="project-links mb-3">
+            <a href="https://github.com/KernelWar/OneConnection-server" target="_blank" class="btn-link">Repositorio</a>
+            <a href="https://kernelwar.github.io/Socrates.Lopez/ocs.html" target="_blank" class="btn-link">Descargar</a>
           </div>
+
+          <div class="project-tech">
+            <span>Electron</span>
+            <span>Bootstrap</span>
+            <span>Node.js</span>
+            <span>CSS3</span>
+          </div>
+          <p class="other-tech">express, socket.io, electron-builder, node ffi napi</p>
         </div>
 
-        <div class="col-12">
-          <div class="panel server-future">
-            <h3>Latido del Servidor ❤️</h3>
-            <div class="pulse">
-              <div class="dot"></div>
-              <div class="pulse-label">
-                Server Status: <span class="online">ONLINE</span>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6 text-center">
+          <img src="./img/p4/1.png" alt="OneConnection Server" class="img-fluid previewable rounded-3 shadow-neon">
         </div>
       </div>
 
-      <!-- 🎧 SPOTIFY WIDGET -->
-      <div id="spotify-widget" class="spotify-widget mt-4">
-        <p id="spotify-status" class="spotify-status"></p>
-        <iframe
-          id="spotify-iframe"
-          src=""
-          width="300"
-          height="80"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe>
+      <!-- PROJECT 2 -->
+      <div class="row align-items-center flex-md-row-reverse gy-4">
+        <div class="col-md-6">
+          <h3 class="project-title">OneConnection App</h3>
+          <p>
+            Cliente que se conecta a <b>OneConnection server</b>, mostrando una interfaz con funciones controladas por
+            el servidor.
+            Disponible en Play Store.
+          </p>
+
+          <div class="project-links mb-3">
+            <a href="https://play.google.com/store/apps/details?id=kernelwar.js.ll" target="_blank" class="btn-link">
+              Ver en Play Store
+            </a>
+          </div>
+
+          <div class="project-tech">
+            <span>Ionic</span>
+            <span>Sass</span>
+            <span>AdMob</span>
+          </div>
+          <p class="other-tech">socket.io-client, plugins de cordova</p>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <img src="./img/p5/1.png" alt="OneConnection App" class="img-fluid previewable rounded-3 shadow-neon">
+        </div>
       </div>
     </div>
-  </section>
-</main>
 
-
-
-
-  <section class="project container-fluid mb-5">
-    <!-- Título global -->
-    <div class="project-title text-center">
-      <h2>Monitoreo y geolocalización de vehículos</h2>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-sm-6">
-        <!-- Proyecto Plataforma Web -->
-        <div class="project-block mb-5">
-          <!-- Slider imágenes -->
-          <div class="project-images-slider">
-            <img src="./img/p1/1.png" alt="Plataforma 1" class="active" data-popup>
-            <img src="./img/p1/2.png" alt="Plataforma 2" data-popup>
-            <img src="./img/p1/3.png" alt="Plataforma 3" data-popup>
-          </div>
-
-          <!-- Descripción -->
-          <div class="project-card mt-3">
-            <h3 class="subtitle">Plataforma Web</h3>
-            <p class="desc">
-              Sistema para la gestión de vehículos, solicitudes, empleados, etc.
-              Conecta Angular con una API-REST en Laravel,
-              mostrando ubicación de vehículos en OpenStreetMap.
-            </p>
-            <p class="links">
-              <a href="#">🔗 Ver Proyecto</a>
-            </p>
-            <!-- Tecnologías -->
-            <div class="project-tech">
-              <span class="badge">Angular</span>
-              <span class="badge">Sass</span>
-              <span class="badge">Bootstrap</span>
-              <span class="badge">Laravel-echo</span>
-              <span class="badge">RxJS</span>
-              <span class="badge">Angular Material</span>
-            </div>
-          </div>
-
-
-
-        </div>
-
-      </div>
-      <div class="col-12 col-sm-6">
-
-        <!-- Proyecto App Móvil -->
-        <div class="project-block mb-5">
-          <!-- Slider imágenes -->
-          <div class="project-images-slider">
-            <img src="./img/p2/1.png" alt="App Móvil" class="active" data-popup>
-          </div>
-
-          <!-- Descripción -->
-          <div class="project-card mt-3">
-            <h3 class="subtitle">App Móvil</h3>
-            <p class="desc">
-              Cliente para la gestión de solicitudes, pasajeros y empleados.
-              Los usuarios ingresan al sistema para solicitar vehículos
-              y acceder a otras funciones.
-            </p>
-            <p class="links">
-              <a href="#">🔗 Ver Proyecto</a>
-            </p>
-            <!-- Tecnologías -->
-            <div class="project-tech">
-              <span class="badge">Ionic</span>
-              <span class="badge">Sass</span>
-              <span class="badge">Laravel-echo</span>
-              <span class="badge">RxJS</span>
-              <span class="badge">Capacitor</span>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
+    <!-- MODAL PREVIEW -->
+    <div class="image-modal" id="imageModal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" alt="preview">
     </div>
   </section>
 
@@ -244,181 +231,202 @@
     </div>
   </section>
 
-  
 
 
-  
 
-  
+
+
+
   <section class="pengui-futuristic">
-  <div class="pengui-content">
-    <!-- COLUMNA IZQUIERDA -->
-    <div class="pengui-text">
-      <h2 class="pengui-title">PENGÜI</h2>
-      <p class="pengui-subtitle">🌍 Proyecto educativo con Realidad Aumentada (Web AR)</p>
+    <div class="pengui-content">
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="pengui-text">
+        <h2 class="pengui-title">PENGÜI</h2>
+        <p class="pengui-subtitle">🌍 Proyecto educativo con Realidad Aumentada (Web AR)</p>
 
-      <div class="pengui-description">
-        <p>
-          <b>PENGÜI</b> es una aplicación educativa de <b>Realidad Aumentada</b> desarrollada con <b>A-Frame AR</b> y <b>jQuery</b>.  
-          Permite explorar el sistema solar de forma inmersiva e interactiva.  
-          Gracias a <b>Gesture-Detector</b> y <b>aframe-spe-particles-component</b>, los usuarios pueden manipular planetas, detectar gestos  
-          y observar partículas 3D dinámicas, ofreciendo una experiencia didáctica atractiva y moderna.
-        </p>
-      </div>
-
-      <div class="pengui-sub-images">
-        <img src="./img/pengui/2.jpg" alt="Captura 1">
-        <img src="./img/pengui/4.jpg" alt="Captura 2">
-      </div>
-
-      <div class="pengui-actions">
-        <a href="https://pengui-23y5p9a24-kernelwar.vercel.app/" target="_blank" class="btn primary">🚀 Experiencia AR</a>
-        <a href="https://github.com/KernelWar/webar-peng-i" target="_blank" class="btn secondary">Repositorio</a>
-      </div>
-    </div>
-
-    <!-- COLUMNA DERECHA -->
-    <div class="pengui-main-card">
-      <img src="./img/pengui.jpg" alt="PENGÜI principal" class="pengui-main-img">
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-<section class="oneconnection-section container-fluid py-5">
-  <div class="container-xl">
-    <h2 class="section-title text-center mb-5">🧩 OneConnection</h2>
-
-    <!-- PROJECT 1 -->
-    <div class="row align-items-center mb-5 gy-4">
-      <div class="col-md-6">
-        <h3 class="project-title">OneConnection Server</h3>
-        <p>
-          Servidor para ejecutar funciones (control del volumen y brillo, acceso a directorios, apagar, reiniciar, etc.)
-          con el cliente <b>OneConnection app</b> en Windows, usando tecnologías web.
-          Proyecto open source bajo licencia <b>GPL v3</b>.
-        </p>
-
-        <div class="project-links mb-3">
-          <a href="https://github.com/KernelWar/OneConnection-server" target="_blank" class="btn-link">Repositorio</a>
-          <a href="https://kernelwar.github.io/Socrates.Lopez/ocs.html" target="_blank" class="btn-link">Descargar</a>
+        <div class="pengui-description">
+          <p>
+            <b>PENGÜI</b> es una aplicación educativa de <b>Realidad Aumentada</b> desarrollada con <b>A-Frame AR</b> y
+            <b>jQuery</b>.
+            Permite explorar el sistema solar de forma inmersiva e interactiva.
+            Gracias a <b>Gesture-Detector</b> y <b>aframe-spe-particles-component</b>, los usuarios pueden manipular
+            planetas, detectar gestos
+            y observar partículas 3D dinámicas, ofreciendo una experiencia didáctica atractiva y moderna.
+          </p>
         </div>
 
-        <div class="project-tech">
-          <span>Electron</span>
-          <span>Bootstrap</span>
-          <span>Node.js</span>
-          <span>CSS3</span>
+        <div class="pengui-sub-images">
+          <img src="./img/pengui/2.jpg" alt="Captura 1">
+          <img src="./img/pengui/4.jpg" alt="Captura 2">
         </div>
-        <p class="other-tech">express, socket.io, electron-builder, node ffi napi</p>
+
+        <div class="pengui-actions">
+          <a href="https://pengui-23y5p9a24-kernelwar.vercel.app/" target="_blank" class="btn primary">🚀 Experiencia
+            AR</a>
+          <a href="https://github.com/KernelWar/webar-peng-i" target="_blank" class="btn secondary">Repositorio</a>
+        </div>
       </div>
 
-      <div class="col-md-6 text-center">
-        <img src="./img/p4/1.png" alt="OneConnection Server" class="img-fluid previewable rounded-3 shadow-neon">
+      <!-- COLUMNA DERECHA -->
+      <div class="pengui-main-card">
+        <img src="./img/pengui.jpg" alt="PENGÜI principal" class="pengui-main-img">
       </div>
     </div>
+  </section>
 
-    <!-- PROJECT 2 -->
-    <div class="row align-items-center flex-md-row-reverse gy-4">
-      <div class="col-md-6">
-        <h3 class="project-title">OneConnection App</h3>
-        <p>
-          Cliente que se conecta a <b>OneConnection server</b>, mostrando una interfaz con funciones controladas por el servidor.
-          Disponible en Play Store.
-        </p>
 
-        <div class="project-links mb-3">
-          <a href="https://play.google.com/store/apps/details?id=kernelwar.js.ll" target="_blank" class="btn-link">
-            Ver en Play Store
+
+
+
+
+
+
+
+
+
+  <section class="project container-fluid mb-5">
+    <!-- Título global -->
+    <div class="project-title text-center">
+      <h2>Monitoreo y geolocalización de vehículos</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <!-- Proyecto Plataforma Web -->
+        <div class="project-block mb-5">
+          <!-- Slider imágenes -->
+          <div class="project-images-slider">
+            <img src="./img/p1/1.png" alt="Plataforma 1" class="active" data-popup>
+            <img src="./img/p1/2.png" alt="Plataforma 2" data-popup>
+            <img src="./img/p1/3.png" alt="Plataforma 3" data-popup>
+          </div>
+
+          <!-- Descripción -->
+          <div class="project-card mt-3">
+            <h3 class="subtitle">Plataforma Web</h3>
+            <p class="desc">
+              Sistema para la gestión de vehículos, solicitudes, empleados, etc.
+              Conecta Angular con una API-REST en Laravel,
+              mostrando ubicación de vehículos en OpenStreetMap.
+            </p>
+            <!--
+            <p class="links">
+              <a href="#">🔗 Ver Proyecto</a>
+            </p>
+            -->
+            <!-- Tecnologías -->
+            <div class="project-tech">
+              <span class="badge">Angular</span>
+              <span class="badge">Sass</span>
+              <span class="badge">Bootstrap</span>
+              <span class="badge">Laravel-echo</span>
+              <span class="badge">RxJS</span>
+              <span class="badge">Angular Material</span>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+      <div class="col-12 col-sm-6">
+
+        <!-- Proyecto App Móvil -->
+        <div class="project-block mb-5">
+          <!-- Slider imágenes -->
+          <div class="project-images-slider">
+            <img src="./img/p2/1.png" alt="App Móvil" class="active" data-popup>
+          </div>
+
+          <!-- Descripción -->
+          <div class="project-card mt-3">
+            <h3 class="subtitle">App Móvil</h3>
+            <p class="desc">
+              Cliente para la gestión de solicitudes, pasajeros y empleados.
+              Los usuarios ingresan al sistema para solicitar vehículos
+              y acceder a otras funciones.
+            </p>
+            <!--
+            <p class="links">
+              <a href="#">🔗 Ver Proyecto</a>
+            </p>
+            -->
+            <!-- Tecnologías -->
+            <div class="project-tech">
+              <span class="badge">Ionic</span>
+              <span class="badge">Sass</span>
+              <span class="badge">Laravel-echo</span>
+              <span class="badge">RxJS</span>
+              <span class="badge">Capacitor</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="kidcode-dark container-fluid py-5">
+    <div class="container-lg">
+      <!-- Header -->
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-12 col-md-10">
+          <h2 class="project-title">💻 KidCode</h2>
+          <p class="project-desc">
+            <b>KidCode</b> es una aplicación de escritorio desarrollada en <b>Java</b> que actúa como un compilador de
+            pseudocódigo con interfaz gráfica.
+            Permite escribir, analizar y ejecutar programas mediante un editor de código integrado, consola de errores,
+            tabla de tokens, generador de código intermedio y visualización del árbol sintáctico.
+            Su objetivo es ofrecer una herramienta educativa para comprender los procesos internos de compilación.
+            Proyecto <b>open source</b> bajo licencia <b>MIT</b>.
+          </p>
+          <a href="https://github.com/KernelWar/KidCode" target="_blank" class="btn-repo">
+            🔗 Ver Repositorio
           </a>
         </div>
+      </div>
 
-        <div class="project-tech">
-          <span>Ionic</span>
-          <span>Sass</span>
-          <span>AdMob</span>
+      <!-- Galería -->
+      <div class="row g-3 justify-content-center align-items-center">
+        <div class="col-6 col-md-3 mb-3">
+          <img src="./img/p6/1.PNG" alt="KidCode 1" class="img-fluid project-img previewable">
         </div>
-        <p class="other-tech">socket.io-client, plugins de cordova</p>
+        <div class="col-6 col-md-3 mb-3">
+          <img src="./img/p6/2.PNG" alt="KidCode 2" class="img-fluid project-img previewable">
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <img src="./img/p6/3.PNG" alt="KidCode 3" class="img-fluid project-img previewable">
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <img src="./img/p6/4.PNG" alt="KidCode 4" class="img-fluid project-img previewable">
+        </div>
       </div>
 
-      <div class="col-md-6 text-center">
-        <img src="./img/p5/1.png" alt="OneConnection App" class="img-fluid previewable rounded-3 shadow-neon">
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL PREVIEW -->
-  <div class="image-modal" id="imageModal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage" alt="preview">
-  </div>
-</section>
-
-
-
-
-
-
-<section class="kidcode-dark container-fluid py-5">
-  <div class="container-lg">
-    <!-- Header -->
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-12 col-md-10">
-        <h2 class="project-title">💻 KidCode</h2>
-        <p class="project-desc">
-          <b>KidCode</b> es una aplicación de escritorio desarrollada en <b>Java</b> que actúa como un compilador de pseudocódigo con interfaz gráfica.
-          Permite escribir, analizar y ejecutar programas mediante un editor de código integrado, consola de errores,
-          tabla de tokens, generador de código intermedio y visualización del árbol sintáctico.
-          Su objetivo es ofrecer una herramienta educativa para comprender los procesos internos de compilación.
-          Proyecto <b>open source</b> bajo licencia <b>MIT</b>.
-        </p>
-        <a href="https://github.com/KernelWar/KidCode" target="_blank" class="btn-repo">
-          🔗 Ver Repositorio
-        </a>
+      <!-- Tecnologías -->
+      <div class="row justify-content-center text-center mt-5">
+        <div class="col-12">
+          <h5 class="tech-title mb-3">Tecnologías principales</h5>
+          <img src="./img/tech/java.png" alt="Java" class="tech-icon mr-2">
+          <span class="tech-label">Java</span>
+        </div>
+        <div class="col-12 mt-3">
+          <p class="tech-others">Otras tecnologías: Graphviz, jflex, jcup</p>
+        </div>
       </div>
     </div>
 
-    <!-- Galería -->
-    <div class="row g-3 justify-content-center align-items-center">
-      <div class="col-6 col-md-3 mb-3">
-        <img src="./img/p6/1.PNG" alt="KidCode 1" class="img-fluid project-img previewable">
-      </div>
-      <div class="col-6 col-md-3 mb-3">
-        <img src="./img/p6/2.PNG" alt="KidCode 2" class="img-fluid project-img previewable">
-      </div>
-      <div class="col-6 col-md-3 mb-3">
-        <img src="./img/p6/3.PNG" alt="KidCode 3" class="img-fluid project-img previewable">
-      </div>
-      <div class="col-6 col-md-3 mb-3">
-        <img src="./img/p6/4.PNG" alt="KidCode 4" class="img-fluid project-img previewable">
-      </div>
+    <!-- Modal -->
+    <div class="image-modal" id="imageModal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" alt="preview">
     </div>
-
-    <!-- Tecnologías -->
-    <div class="row justify-content-center text-center mt-5">
-      <div class="col-12">
-        <h5 class="tech-title mb-3">Tecnologías principales</h5>
-        <img src="./img/tech/java.png" alt="Java" class="tech-icon mr-2">
-        <span class="tech-label">Java</span>
-      </div>
-      <div class="col-12 mt-3">
-        <p class="tech-others">Otras tecnologías: Graphviz, jflex, jcup</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal -->
-  <div class="image-modal" id="imageModal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage" alt="preview">
-  </div>
-</section>
+  </section>
 
 
 
