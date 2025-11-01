@@ -1,0 +1,180 @@
+.pengui-futuristic {
+  background: radial-gradient(circle at 20% 20%, #0a192f 0%, #0e2438 100%);
+  color: #e0f7fa;
+  font-family: "Orbitron", "Poppins", sans-serif;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
+
+/* === LAYOUT PRINCIPAL === */
+.pengui-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === TEXTO === */
+.pengui-text {
+  flex: 1 1 520px;
+  z-index: 2;
+}
+
+.pengui-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00e5ff, #7c4dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(124, 77, 255, 0.3);
+}
+
+.pengui-subtitle {
+  color: #80deea;
+  margin-bottom: 1.8rem;
+  font-size: 1.1rem;
+}
+
+.pengui-description {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  border-radius: 14px;
+  padding: 1.6rem 1.8rem;
+  line-height: 1.8;
+  color: #e0f2f1;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+/* === SUB-IMÁGENES === */
+.pengui-sub-images {
+  display: flex;
+  gap: 12px;
+  margin-top: 1.8rem;
+  opacity: 0.9;
+  flex-wrap: wrap;
+}
+
+.pengui-sub-images img {
+  height: 130px;
+  width: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pengui-sub-images img:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 0 20px rgba(124, 77, 255, 0.35);
+}
+
+/* === IMAGEN PRINCIPAL CON TAMAÑO DEL CARD === */
+.pengui-main-card {
+  flex: 1 1 420px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pengui-main-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+  filter: drop-shadow(0 0 25px rgba(0, 229, 255, 0.25));
+}
+
+.pengui-main-card:hover .pengui-main-img {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* === BOTONES === */
+.pengui-actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, #00e5ff, #7c4dff);
+  color: #fff;
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.35);
+}
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 24px rgba(0, 229, 255, 0.55);
+}
+
+.btn.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #b2ebf2;
+  border: 1px solid rgba(0, 229, 255, 0.25);
+}
+.btn.secondary:hover {
+  background: rgba(0, 229, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+  .pengui-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .pengui-main-card {
+    width: 90%;
+    max-width: 420px;
+  }
+
+  .pengui-text {
+    text-align: center;
+  }
+
+  .pengui-sub-images {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .pengui-sub-images img {
+    height: 100px;
+  }
+
+  .pengui-title {
+    font-size: 2.2rem;
+  }
+
+  .pengui-main-card {
+    width: 100%;
+    max-width: 360px;
+  }
+}

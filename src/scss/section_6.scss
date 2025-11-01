@@ -1,0 +1,119 @@
+.kidcode-dark {
+  background: radial-gradient(circle at 20% 30%, #0e0e12 0%, #050507 100%);
+  color: #e5e7eb;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+
+  .project-title {
+    color: #7ae0ff;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-shadow: 0 0 10px rgba(122, 224, 255, 0.4);
+  }
+
+  .project-desc {
+    font-size: 1.05rem;
+    color: #b8b9bf;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .btn-repo {
+    background: linear-gradient(90deg, #8d7bff, #7ae0ff);
+    color: #0d0d0d;
+    padding: 0.6rem 1.4rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(90deg, #7ae0ff, #8d7bff);
+      text-decoration: none;
+      color: #000;
+      box-shadow: 0 0 12px rgba(122, 224, 255, 0.4);
+    }
+  }
+
+  .project-img {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(141, 123, 255, 0.4);
+    }
+  }
+
+  .tech-title {
+    color: #7ae0ff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .tech-icon {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    filter: drop-shadow(0 0 5px rgba(122, 224, 255, 0.6));
+  }
+
+  .tech-label {
+    font-weight: 500;
+    color: #e5e7eb;
+  }
+
+  .tech-others {
+    font-size: 0.95rem;
+    color: #a3a3a3;
+  }
+
+  /* Modal */
+  .image-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.9);
+    justify-content: center;
+    align-items: center;
+
+    .modal-content {
+      max-width: 85%;
+      max-height: 85%;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(122, 224, 255, 0.4);
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: #7ae0ff;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .project-title {
+      font-size: 1.8rem;
+    }
+
+    .project-img {
+      margin-bottom: 1.5rem; // más espacio entre imágenes en móvil
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.rick-morty {
+  background: linear-gradient(135deg, #0a0f1f, #1a1b3a 40%, #241b3f 100%);
+  background-size: 300% 300%;
+  animation: bgShift 25s ease infinite;
+  color: #f2f6ff;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@keyframes bgShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Título global */
+.rm-title h2 {
+  font-family: 'Creepster', cursive;
+  font-size: clamp(32px, 5vw, 64px);
+  color: #97ff00;
+  text-shadow: 0 0 12px #00ff90, 0 0 24px #97ff00;
+  animation: floaty 4s ease-in-out infinite alternate;
+}
+@keyframes floaty {
+  from { transform: translateY(-5px) rotate(-1deg); }
+  to   { transform: translateY(5px) rotate(1deg); }
+}
+
+/* Contenedor de descripción */
+.rm-card {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rm-subtitle {
+  font-family: 'Creepster', cursive;
+  color: #97ff00;
+  margin-bottom: 16px;
+  text-shadow: 0 0 8px rgba(151,255,0,0.6);
+  font-size: 28px;
+  text-align: center;
+}
+
+.rm-desc {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #e4ffe4;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Botón de demo */
+.btn-demo {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 30px;
+  background: #97ff00;
+  color: #0d2c1d !important; /* fuerza color */
+  font-weight: bold;
+  text-decoration: none !important; /* quita subrayado */
+  box-shadow: 0 0 12px rgba(151,255,0,0.8),
+              0 0 25px rgba(0,255,144,0.5);
+  transition: transform .3s ease, box-shadow .3s ease, background .3s ease;
+}
+.btn-demo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(151,255,0,1),
+              0 0 35px rgba(0,255,144,0.9),
+              0 0 45px rgba(141,123,255,0.7);
+  background: #b6ff4d;
+}
+
+/* Tecnologías */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.project-tech .badge {
+  background: #00ff90;
+  color: #0d2c1d;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(0, 255, 144, .6);
+}
+
+/* Imágenes estilo vintage */
+.rm-images-vintage {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px; /* separación en mobile */
+}
+
+.rm-images-vintage img {
+  width: 80%;
+  max-width: 260px;
+  border-radius: 12px;
+  box-shadow: 
+    0 0 8px rgba(151, 255, 0, .4),
+    0 0 15px rgba(141, 123, 255, .3),
+    0 0 20px rgba(122, 224, 255, .2);
+  cursor: pointer;
+  transform: rotate(-2deg) scale(0.95);
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.rm-images-vintage img:nth-child(even) {
+  transform: rotate(2deg) scale(0.95);
+}
+
+.rm-images-vintage img:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 
+    0 0 12px rgba(151, 255, 0, .6),
+    0 0 20px rgba(141, 123, 255, .4),
+    0 0 30px rgba(122, 224, 255, .3);
+}

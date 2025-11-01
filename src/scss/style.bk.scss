@@ -1,0 +1,222 @@
+@import "fonts.scss";
+html,
+body {
+  height: 100%;
+  font-family: "Syne", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.section-page {
+  //height: 100%;
+  background: #eeeeee;
+  //display: grid;
+  align-items: center;
+  .row {
+    height: 100%;
+  }
+}
+#content-1 {
+  background: url("../img/filosofos_2.png"), linear-gradient(135deg, #030711, #1a1f2b);
+  background-position: bottom right;
+  background-size: contain;
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: grid;
+  overflow: auto;
+  #content-info {
+    padding: 5%;
+    padding-bottom:  0;
+    align-items: center;
+  }
+  #links {
+    padding-left: 15px;
+    margin: 0;
+    li {
+      display: inline-block;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      a {
+        color: #cccccc;
+        font-size: 20px;
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+.img-link {
+  width: 28px;
+}
+#content-my-photo {
+  text-align: left;
+  display: flex;
+  #my-photo {
+    height: 150px;
+    width: 150px;
+    background-image: url(https://avatars.githubusercontent.com/u/14639332?v=4);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+  }
+}
+
+.my-info {
+  color: #cccccc;
+  #text-hello {
+    font-size: 18px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  #my-name {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 200;
+    color: #fff !important;
+  }
+  #about-me {
+    font-family: "DM Sans", sans-serif;
+    font-size: 26px;
+    color: #00ff64;
+    font-weight: 700;
+    margin-top: 3px;
+    letter-spacing: 1.5px;
+  }
+}
+.content-project {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  .content-image-project {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  @media (max-width: 575px) {
+    .image-project {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .description-project {
+      p {
+        max-width: 100% !important;
+        font-family: "Inter", sans-serif;
+      }
+    }
+  }
+  @media (min-width: 576px) {
+    .image-project {
+      margin-left: auto;
+    }
+    .description-project {
+      border-left: 1px solid #575757ff;
+    }
+  }
+  .image-project {
+    width: 105px;
+    height: 105px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .description-project {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    p {
+      max-width: 210px;
+    }
+    padding-left: 15px;
+  }
+}
+.title-section{
+  color: #fff !important;
+}
+#image-pengui {
+  background-image: url("../img/pengui.jpg");
+}
+#img-mouse {
+  background-image: url("../img/logo_mouse.png");
+  border-radius: 0;
+}
+.links-project {
+  a {
+    color: #fff !important;
+    font-size: 18px;
+  }
+}
+.not-border {
+  border: none !important;
+  padding: 5px !important;
+}
+.cards-project {
+  padding-top: 7em;
+  padding-bottom: 7em;
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .row {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+}
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  border: none !important;
+  border-radius: 10px !important;
+  img {
+    border-radius: 10px 10px 0 0 !important;
+  }
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-title{
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
+
+.card-subtitle{
+  font-size: 14px;
+  margin-top: 1px !important;
+}
+
+.card-text {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+}
+
+.card-text-footer {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+}
+
+#content-2 {
+  background: linear-gradient(135deg, #030711, #1a1f2b, #3b4a5a);
+}
+#content-3 {  
+  background: linear-gradient(135deg, #2b3a55, #f5f5dc);
+  color: #fff !important;
+}
+#content-4 {
+ background: linear-gradient(135deg, #030711, #2b303d);
+ h2 {
+    color: #363636;
+  }
+}
+
+.image-card {
+  cursor: pointer;
+}
+
+#spotify-widget {}

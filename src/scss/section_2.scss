@@ -1,0 +1,165 @@
+.project {
+  margin-top: 60px;
+
+  .project-title h2 {
+    font-size: clamp(20px, 4vw, 32px);
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 8px rgba(122,224,255,.5);
+    margin-bottom: 40px;
+  }
+
+  .project-block {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+/* === Slider automático de imágenes === */
+.project-images-slider {
+  position: relative;
+  margin: 0 auto 20px auto;
+  height: 260px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+
+    &.active {
+      opacity: 1;
+      transform: translateY(0);
+      z-index: 2;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px var(--accent), 0 0 25px rgba(141,123,255,.6);
+    }
+  }
+}
+
+/* === Card retro blur === */
+.project-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.4), inset 0 0 12px rgba(255,255,255,.05);
+  text-align: left;
+  transition: transform .3s ease, box-shadow .3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 
+      0 6px 20px rgba(0, 0, 0, 0.55),
+      inset 0 0 14px rgba(255, 255, 255, 0.08),
+      0 0 10px rgba(122, 224, 255, 0.3);
+  }
+
+  .subtitle {
+    font: 700 16px "Share Tech Mono", monospace;
+    color: var(--accent-2);
+    margin-bottom: 12px;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--fg);
+    margin-bottom: 16px;
+  }
+
+  .links a {
+    color: var(--accent-3);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+  }
+}
+
+/* === Badges === */
+.project-tech {
+  margin-top: 20px;
+  text-align: left;
+
+  .badge {
+    margin: 4px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: rgba(122,224,255,.1);
+    border: 1px solid rgba(122,224,255,.3);
+    color: var(--accent);
+    font-size: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+    transition: transform .3s ease, box-shadow .3s ease;
+
+    &:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 10px var(--accent), 0 0 18px rgba(141,123,255,.6);
+    }
+  }
+}
+
+/* Imágenes que abren popup */
+[data-popup] {
+  cursor: pointer;
+  transition: transform .3s ease;
+
+  &:hover {
+    transform: scale(1.03); /* pequeño zoom en hover */
+  }
+}
+
+
+
+/* === Popup modal de imagen === */
+.image-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.75); /* overlay más suave */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s ease, visibility .4s ease;
+
+  img {
+    max-width: 80%;   /* evita ocupar toda la pantalla */
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(122,224,255,.5);
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Cerrar con clic */
+  cursor: zoom-out;
+}
