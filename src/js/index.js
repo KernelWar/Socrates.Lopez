@@ -4,6 +4,7 @@ import './../scss/section_3.scss';
 import './../scss/section_4.scss';
 import './../scss/section_5.scss';
 import './../scss/section_6.scss';
+import './../scss/section_7.scss';
 import './common'
 // Generar caracteres aleatorios continuamente como "películas de acción"
 const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@%+-=*/<>?{}[]";

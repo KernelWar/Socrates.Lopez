@@ -39,7 +39,8 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: "./src/img", to: path.resolve(__dirname, 'dist/img') },
-                { from: "./src/favicon.png", to: path.resolve(__dirname, 'dist/') }
+                { from: "./src/favicon.png", to: path.resolve(__dirname, 'dist/') },
+                { from: "./src/app-ads.txt", to: path.resolve(__dirname, 'dist/') }
             ],
         }),
     ].concat(
