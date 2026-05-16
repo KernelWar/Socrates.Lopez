@@ -67,6 +67,55 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const revealTargets = [];
+  const selectors = [
+    ".section-head",
+    ".project-panel",
+    ".project-card",
+    ".kidcode-panel",
+    ".switch-slide-feature-grid article",
+    ".rm-images-vintage img",
+    ".pengui-sub-images img",
+    ".kidcode-gallery img"
+  ];
+
+  document.querySelectorAll(".portfolio-section").forEach(section => {
+    const sectionTargets = section.querySelectorAll(selectors.join(","));
+
+    sectionTargets.forEach((target, index) => {
+      target.classList.add("scroll-reveal");
+      target.style.setProperty("--reveal-delay", `${Math.min(index * 80, 420)}ms`);
+      revealTargets.push(target);
+    });
+  });
+
+  if (!revealTargets.length) {
+    return;
+  }
+
+  if (!("IntersectionObserver" in window)) {
+    revealTargets.forEach(target => target.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, revealObserver) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      entry.target.classList.add("is-visible");
+      revealObserver.unobserve(entry.target);
+    });
+  }, {
+    rootMargin: "0px 0px -12% 0px",
+    threshold: 0.16
+  });
+
+  revealTargets.forEach(target => observer.observe(target));
+});
+
 
 
 
