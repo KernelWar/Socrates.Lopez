@@ -4,7 +4,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const { ProvidePlugin } = require('webpack');
 
-const pages = ['index', 'ocs']
+const pages = ['index', 'ocs', 'puntozeta']
 
 module.exports = {
     entry: pages.reduce((config, page) => {
