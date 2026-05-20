@@ -70,17 +70,33 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const revealTargets = [];
   const selectors = [
-    ".section-head",
-    ".project-panel",
-    ".project-card",
-    ".kidcode-panel",
-    ".switch-slide-feature-grid article",
+    ".hero > div:first-child > .kicker",
+    ".hero .title h1",
+    ".hero .role",
+    ".hero .platforms a",
+    ".hero .hud",
+    ".hero .widgets .panel",
+    ".section-head > *",
+    ".project-copy > .section-kicker",
+    ".project-copy > .panel-index",
+    ".project-copy > h2",
+    ".project-copy > h3",
+    ".project-copy > p",
+    ".project-copy > .action-row",
+    ".project-copy > .tech-list",
+    ".project-copy > .supporting-tech",
+    ".project-card-copy > *",
+    ".media-frame",
+    ".project-images-slider",
     ".rm-images-vintage img",
+    ".switch-slide-panel-head",
+    ".switch-slide-track-demo",
+    ".switch-slide-feature-grid article",
     ".pengui-sub-images img",
     ".kidcode-gallery img"
   ];
 
-  document.querySelectorAll(".portfolio-section").forEach(section => {
+  document.querySelectorAll("section").forEach(section => {
     const sectionTargets = section.querySelectorAll(selectors.join(","));
 
     sectionTargets.forEach((target, index) => {
